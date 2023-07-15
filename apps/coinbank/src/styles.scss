@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600&display=swap");
+
+:root {
+  // priamry font
+  --coinbank-color-primary: #e7e3fc;
+
+  // button color
+  --coinbank-color-button: #5235e8;
+
+  // background-color:
+  --coinbank-background-1: #0e0637;
+
+  // text color
+  --coinbank-text-color: #131316;
+  --coinbank-faded-text-color: #717184;
+
+  // font-family
+  --coinbank-Heebo: "Heebo";
+  /* You can add global styles to this file, and also import other style files */
+  @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600&display=swap");
+
+  :root {
+    // priamry font
+    --coinbank-color-primary: #e7e3fc;
+
+    // button color
+    --coinbank-color-button: #5235e8;
+
+    // background-color:
+    --coinbank-background-1: #0e0637;
+
+    // text color
+    --coinbank-text-color: #131316;
+    --coinbank-faded-text-color: #717184;
+
+    // font-family
+    --coinbank-Heebo: "Heebo";
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,190 @@
+.body {
+  background-color: #fefeff;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  gap: 15%;
+  flex-direction: row;
+  padding-top: 3%;
+}
+
+.section1 {
+  margin-left: 12%;
+  gap: 10px;
+}
+
+.p1 {
+  color: var(--coinbank-color-button);
+  font-size: 16px;
+}
+
+h1 {
+  font-family: var(--coinbank-Heebo);
+  color: var(--coinbank-text-color);
+  font-weight: 500;
+  font-size: 60px;
+}
+
+p {
+  color: var(--coinbank-button-color);
+  font-size: 100;
+  font-family: var(--coinbank-Heebo);
+  font-size: 14px;
+}
+
+.button {
+  background-color: var(--coinbank-color-button);
+  font-family: var(--coinbank-Heebo);
+  color: #fff;
+  font-size: 20px;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.coins {
+  background-color: #fefeff;
+  padding-top: 8%;
+  padding-left: 20%;
+}
+
+.carrds {
+  display: flex;
+  margin-left: 17%;
+  padding-top: 4%;
+  gap: 10%;
+}
+
+.card {
+  background-color: #fefeff;
+  border-radius: 50px;
+  height: 480px;
+  width: 500px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  text-align: center;
+  border: thick solid #cac8c8;
+  overflow: hidden;
+  box-shadow: 10px 10px 5px rgb(216, 230, 235);
+}
+
+.container1 {
+  margin-left: 10%;
+  padding-top: 5%;
+  display: flex;
+  gap: 4%;
+}
+
+h5 {
+  color: var(--coinbank-color-button);
+  font-family: var(--coinbank-Heebo);
+  font-size: 18px;
+  font-weight: 300;
+}
+
+h2 {
+  font-family: var(--coinbank-Heebo);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.section2 {
+  padding-top: 8%;
+}
+
+.img1 {
+  padding-top: 10%;
+}
+
+imgg {
+  width: 300px;
+}
+
+h3 {
+  font-family: var(--coinbank-Heebo);
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15%;
+    padding-top: 10%;
+  }
+
+  .section1 {
+    text-align: center;
+    margin-left: 10%;
+  }
+
+  .image {
+    width: 500px;
+    height: 400px;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    gap: 30%;
+  }
+
+  .carrds {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    gap: 50px;
+    padding-left: 4%;
+  }
+
+  .image {
+    width: 290px;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .section1 {
+    text-align: center;
+    height: 10%;
+  }
+
+  .carrds {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    gap: 10%;
+  }
+
+  .card {
+    width: 280px;
+    height: 480px;
+  }
+
+  .coins {
+    background-color: #fefeff;
+    padding-top: 8%;
+    padding-left: 20%;
+  }
+
+}
