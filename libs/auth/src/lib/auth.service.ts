@@ -6,7 +6,10 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
-  private apiUrl = 'http://0.0.0.0:3000/'; // Replace with your Rails API URL
+  getAuthStatus() {
+    throw new Error('Method not implemented.');
+  }
+  private apiUrl = 'http://0.0.0.0:3000/';
 
   constructor(private http: HttpClient) {}
 

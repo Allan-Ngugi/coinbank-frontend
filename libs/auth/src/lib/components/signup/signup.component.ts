@@ -19,7 +19,6 @@ export class SignupComponent {
   signUp() {
     this.authService.signUp(this.user).subscribe(
       (response: any) => {
-        // Handle successful sign-up response
         console.log('Sign-up successful');
       },
       (error: any) => {
