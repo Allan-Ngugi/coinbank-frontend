@@ -115,6 +115,8 @@ h3 {
   font-size: 20px;
 }
 .card-1{
+  background-color: #0e0637;
+  color: #fff;
   width: 300px;
   height: 300px;
   border:solid #fff;
@@ -123,11 +125,10 @@ h3 {
     -moz-border-radius: 30px;
     -ms-border-radius: 30px;
     -o-border-radius: 30px;
-    padding-top: 8%;
-    background-color: #fefeff;
+    padding-top: 10%;
 }
 .section-2{
-  margin-left: 5%;
+  margin-left: 10%;
   display: grid;
   grid-template-columns: auto auto auto;
   font-family: var(--coinbank-Heebo);
@@ -168,6 +169,7 @@ h3 {
   .carrds {
     display: flex;
     flex-direction: column;
+    gap: 10%;
   }
 }
 
@@ -198,7 +200,7 @@ h3 {
     display: flex;
     flex-direction: column;
     margin-left: 10%;
-    gap: 10%;
+    gap: 50%;
   }
 
   .card {
@@ -214,11 +216,16 @@ h3 {
   .section-2{
     display: grid;
     grid-template-columns: auto;
-    margin-left: 10%;
+    margin-left: 8%;
   }
   .card-1{
     width: 280px;
     height: 300px;
+    padding-top: 22%;
+  }
+  .candle{
+    width: 250px;
+    height: 200px;
   }
 
 }
