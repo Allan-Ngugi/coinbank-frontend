@@ -14,7 +14,7 @@ const APP_ROUTES: Route[] = [
   {
     path: 'buynft',
     loadChildren: () => import('@coinbank/buynft').then((m) => m.BuynftModule),
-    canActivate: [AuthGuard],
+    // canActivate: [AuthGuard],
   },
 ];
 @NgModule({

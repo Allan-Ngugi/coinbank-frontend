@@ -52,3 +52,35 @@ button {
 button :hover {
   background-color: red;
 }
+
+@media screen and (max-width: 325px) {
+  .cont {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 2px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cont {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .card3 {
+    width: 300px;
+  }
+
+  .nft-images {
+    width: 300px;
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cont {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 10%;
+  }
+}
