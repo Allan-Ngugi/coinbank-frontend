@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -9,7 +10,7 @@ export class AuthService {
   getAuthStatus() {
     throw new Error('Method not implemented.');
   }
-  private apiUrl = 'http://0.0.0.0:3000/';
+  private apiUrl = 'http://127.0.0.1:3000';
 
   constructor(private http: HttpClient) {}
 
