@@ -4,14 +4,20 @@
       src="https://res.cloudinary.com/djxvkxudp/image/upload/v1689683473/Art-backend/nft_bot1_hhogjy.jpg" alt="">
     <h2>Genie</h2>
     <p>Over and Under</p>
-    <button>Buy</button>
+    <button (click)="showOverlayPanel()" icon="pi pi-image" label="Buy">Buy</button>
+    <p-overlayPanel #op>
+      <img src="https://primefaces.org/cdn/primeng/images/demo/product/bamboo-watch.jpg" alt="product" />
+    </p-overlayPanel>
   </div>
   <div class="card3">
     <img class="nft-images"
       src="https://res.cloudinary.com/djxvkxudp/image/upload/v1689683473/Art-backend/nftbot_ldun4l.jpg" alt="">
     <h2>Pip Sniper</h2>
     <p>Even and Odd</p>
-    <button>Buy</button>
+    <button (click)="showOverlayPanel()" icon="pi pi-image" label="Buy">Buy</button>
+    <p-overlayPanel #op>
+      <img src="https://primefaces.org/cdn/primeng/images/demo/product/bamboo-watch.jpg" alt="product" />
+    </p-overlayPanel>
   </div>
   <div class="card3">
     <img class="nft-images"
