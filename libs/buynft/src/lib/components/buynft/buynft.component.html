@@ -18,13 +18,9 @@
       src="https://res.cloudinary.com/djxvkxudp/image/upload/v1689683473/Art-backend/nft3_vhcmav.jpg" alt="">
     <h2>Branny</h2>
     <p>matches and differs</p>
-    <div class="card flex justify-content-center">
-      <p-overlayPanel #op>
-        <img src="https://primefaces.org/cdn/primeng/images/demo/product/bamboo-watch.jpg" alt="product" />
-      </p-overlayPanel>
-      <p-button (click)="op.ontoggle($event)" icon="pi pi-image" label="Show"></p-button>
-    </div>
-
-    <button>Buy</button>
+    <button (click)="showOverlayPanel()" icon="pi pi-image" label="Buy">Buy</button>
+    <p-overlayPanel #op>
+      <img src="https://primefaces.org/cdn/primeng/images/demo/product/bamboo-watch.jpg" alt="product" />
+    </p-overlayPanel>
   </div>
 </div>
