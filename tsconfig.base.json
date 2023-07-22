@@ -17,6 +17,7 @@
     "paths": {
       "@coinbank/auth": ["libs/auth/src/index.ts"],
       "@coinbank/buynft": ["libs/buynft/src/index.ts"],
+      "@coinbank/features": ["libs/features/src/index.ts"],
       "@coinbank/home": ["libs/home/src/index.ts"]
     }
   },
