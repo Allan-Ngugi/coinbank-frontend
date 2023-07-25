@@ -1,1 +1,32 @@
-<p>navbar works!</p>
+<nav class="nav">
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-3 col-xs-3">
+          <div class="logo">
+            <img style="height: 50px; width: 50px;"
+              src="https://res.cloudinary.com/djxvkxudp/image/upload/v1689088671/Art-backend/Bitcoin_logo-removebg-preview_hhicvz.png"
+              alt="logos">
+          </div>
+        </div>
+
+        <div class="col-md-9 col-sm-9 col-9 text-end">
+          <div class="menu_icon" [class.menu_iconClass]="menu_icon_variable" (click)="openMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="menu" [class.menuClasse]="menuVariable">
+            <ul>
+              <li><a href="">Home</a></li>
+              <li><a href="/buynft">BUY NFT</a></li>
+              <li><a href="/auth/login">login</a></li>
+              <li><a href="/auth/signup">Sign up</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</nav>
