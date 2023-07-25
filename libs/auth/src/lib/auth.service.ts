@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { HttpClientModule } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, catchError, throwError } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -16,7 +16,9 @@ export class AuthService {
 
   signUp(user: any): Observable<any> {
     const url = `${this.apiUrl}/api/signup`;
-    return this.http.post(url, user);
+    return this.http.post(url, user).pipe(catchError(error=>{
+      return throwError("Post error")
+    }))
   }
 
   login(credentials: any): Observable<any> {
