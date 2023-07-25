@@ -4,7 +4,7 @@
 
 header {
   padding: 10px 0;
-  background-color: #0E0637;
+  // background-color: #0E0637;
 }
 
 .logo {
@@ -36,7 +36,7 @@ header {
 .menu ul li a {
   list-style: none;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--coinbank-text-color);
 }
 
 .menu ul li a:hover {
@@ -46,14 +46,19 @@ header {
 }
 
 @media(max-width: 999px) {
+  header {
+    background-color: var(--coinbank-background-1);
+  }
+
   .menu {
     position: fixed;
     right: -280px;
     top: 64;
     width: 280px;
     height: 100%;
-    background: #222;
+    background: var(--coinbank-color-button);
     transition: 0.4s ease-in-out;
+    color: #ffffff;
   }
 
   .menu ul li {
@@ -62,6 +67,7 @@ header {
     margin: 0;
     padding: 10px 0 10px 26px;
     border-bottom: 1px solid #312f2f;
+    color: #ffffff;
   }
 
   .menu_icon {
