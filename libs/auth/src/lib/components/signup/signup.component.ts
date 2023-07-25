@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from '../../auth.service';
 
-
 @Component({
   selector: 'coinbank-signup',
   templateUrl: './signup.component.html',

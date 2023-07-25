@@ -1,3 +1,7 @@
+.authpad {
+  padding-top: 2%;
+}
+
 .wrapper {
   font-family: var(--coinbank-Heebo);
   display: flex;
@@ -28,54 +32,55 @@ p.subtitle {
 
 form {
   color: #131316;
+}
 
-  .input-wrapper {
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    margin: 1rem 0;
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 1rem 0;
 
-    input {
-      padding: 0.75rem;
-      border-radius: 0.5rem;
-      border: solid 1px;
-      max-width: 550px;
-    }
-  }
-
-  button {
-    padding: 1.5rem;
-    margin: 1rem 0;
-    width: 100%;
-    max-width: 150px;
-    border: none;
+  input {
+    padding: 0.75rem;
     border-radius: 0.5rem;
-    cursor: pointer;
-
-    &.create-account {
-      background-color: var(--coinbank-background-1);
-      color: #fff;
-    }
-
-    &.google-signup {
-      background-color: #fff;
-      border: solid 1px #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
-
-    &.facebook-signup {
-      background-color: #fff;
-      border: solid 1px #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 10px;
-    }
+    border: solid 1px;
+    max-width: 550px;
   }
 }
+
+button {
+  padding: 1.5rem;
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 150px;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+
+  &.create-account {
+    background-color: var(--coinbank-background-1);
+    color: #fff;
+  }
+
+  &.google-signup {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &.facebook-signup {
+    background-color: #fff;
+    border: solid 1px #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+}
+
 
 @media screen and (max-width: 920px) {
   .image-section {

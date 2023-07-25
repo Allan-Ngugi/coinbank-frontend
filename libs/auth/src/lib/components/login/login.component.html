@@ -1,23 +1,24 @@
 <coinbank-navbar></coinbank-navbar>
-<coinbank-login-skeleton>
-  <div form>
-    <h1 class="title">Sign in to Coinbank</h1>
-    <p class="subtitle">We're glad you are back</p>
-    <form>
-      <div class="input-wrapper">
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="johndoe@gmail.com" />
-      </div>
+<div class="authpad">
+  <coinbank-login-skeleton>
+    <div form>
+      <h1 class="title">Sign in to Coinbank</h1>
+      <p class="subtitle">We're glad you are back</p>
+      <form>
+        <div class="input-wrapper">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="johndoe@gmail.com" />
+        </div>
 
-      <div class="input-wrapper">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="******" />
-      </div>
-      <a href="#" style="color: #5235e8; text-decoration: none">Forgot Password?</a>
-      <button class="create-account" type="submit" style="background-color: #5235e8">
-        Sign In
-      </button>
-      <!-- <button class="google-signup" type="submit">
+        <div class="input-wrapper">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="******" />
+        </div>
+        <a href="#" style="color: #5235e8; text-decoration: none">Forgot Password?</a>
+        <button class="create-account" type="submit" style="background-color: #5235e8">
+          Sign In
+        </button>
+        <!-- <button class="google-signup" type="submit">
         <svg
           width="25"
           height="24"
@@ -63,23 +64,24 @@
         </svg>
         Sign in with Facebook
       </button> -->
-    </form>
-    <p style="text-align: center; color: #717184; font-weight: lighter">
-      Don't have an account already?
-      <a style="color: var(--coinbank-background-1); text-decoration: none" href="#" routerLink="/auth/signup">Sign up
-        now</a>
-    </p>
-  </div>
-  <div media>
-    <img src="assets/images/login.png" alt="login-image" style="width: 100%" />
-    <h2 style="padding-right: 2.5rem; margin-bottom: 0">
-      ~ Welcome to the world of crypto! Log in for your coinbank personal
-      wallet.
-    </h2>
-    <p style="font-size: 0.9rem; color: #f4f4f6; margin-bottom: 2rem">
-      We're the first crypto wallet that's secure, simple, and easy to use. Use
-      it on your phone or in web browser with no downloads or installation
-      required.
-    </p>
-  </div>
-</coinbank-login-skeleton>
+      </form>
+      <p style="text-align: center; color: #717184; font-weight: lighter">
+        Don't have an account already?
+        <a style="color: var(--coinbank-background-1); text-decoration: none" href="#" routerLink="/auth/signup">Sign up
+          now</a>
+      </p>
+    </div>
+    <div media>
+      <img src="assets/images/login.png" alt="login-image" style="width: 100%" />
+      <h2 style="padding-right: 2.5rem; margin-bottom: 0">
+        ~ Welcome to the world of crypto! Log in for your coinbank personal
+        wallet.
+      </h2>
+      <p style="font-size: 0.9rem; color: #f4f4f6; margin-bottom: 2rem">
+        We're the first crypto wallet that's secure, simple, and easy to use. Use
+        it on your phone or in web browser with no downloads or installation
+        required.
+      </p>
+    </div>
+  </coinbank-login-skeleton>
+</div>
