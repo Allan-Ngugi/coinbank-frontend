@@ -8,16 +8,13 @@ import { OverlayPanel } from 'primeng/overlaypanel';
   styleUrls: ['./buynft.component.scss'],
 })
 export class BuynftComponent implements AfterViewInit {
-  @ViewChild('op') op!: OverlayPanel | undefined; // Add union type with undefined
+  @ViewChild('op') op!: OverlayPanel | undefined;
 
   constructor() {}
 
-  ngAfterViewInit(): void {
-    // The p-overlayPanel element is available here
-    // You can perform any initialization or checks related to the element
-  }
+  ngAfterViewInit(): void {}
 
   showOverlayPanel() {
-    this.op?.toggle(true); // Use safe navigation operator
+    this.op?.toggle(true);
   }
 }
