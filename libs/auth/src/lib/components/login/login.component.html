@@ -4,12 +4,11 @@
     <div form>
       <h1 class="title">Sign in to Coinbank</h1>
       <p class="subtitle">We're glad you are back</p>
-      <form>
-        <div class="input-wrapper">
+      <form [formGroup]="formData" (ngSubmit)="login()">
+        <div class=" input-wrapper">
           <label for="email">Email</label>
           <input type="email" id="email" placeholder="johndoe@gmail.com" />
         </div>
-
         <div class="input-wrapper">
           <label for="password">Password</label>
           <input type="password" id="password" placeholder="******" />
