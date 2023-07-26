@@ -20,7 +20,7 @@ export class SignupComponent implements OnInit {
 
   signUp() {
     if (this.formData.valid) {
-      this.authService.signUp(this.formData.value).subscribe(
+      this.authService.signUp(JSON.stringify(this.formData.value)).subscribe(
         (data) => {
           console.log(data);
           console.log('SUCCESS!');

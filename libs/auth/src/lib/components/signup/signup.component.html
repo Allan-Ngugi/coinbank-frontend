@@ -7,30 +7,15 @@
       <form [formGroup]="formData" (ngSubmit)="signUp()">
         <div class="input-wrapper">
           <label for="name">Name</label>
-          <input
-            type="text"
-            id="name"
-            placeholder="John Doe"
-            formControlName="name"
-          />
+          <input type="text" id="name" placeholder="John Doe" formControlName="name" />
         </div>
         <div class="input-wrapper">
           <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            placeholder="johndoe@gmail.com"
-            formControlName="email"
-          />
+          <input type="email" id="email" placeholder="johndoe@gmail.com" , httpOptions formControlName="email" />
         </div>
         <div class="input-wrapper">
           <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            placeholder="******"
-            formControlName="password"
-          />
+          <input type="password" id="password" placeholder="******" formControlName="password" />
         </div>
         <button class="create-account" type="submit">Create account</button>
         <!-- <button class="google-signup" type="submit">
@@ -82,12 +67,7 @@
       </form>
       <p style="text-align: center; color: #717184; font-weight: lighter">
         Have an account already?
-        <a
-          style="color: var(--coinbank-background-1); text-decoration: none"
-          href="#"
-          routerLink="/auth"
-          >Sign in</a
-        >
+        <a style="color: var(--coinbank-background-1); text-decoration: none" href="#" routerLink="/auth">Sign in</a>
       </p>
     </div>
     <div media>
@@ -99,11 +79,7 @@
         industry and want to own your own digital coins, then sign up with us
         today!
       </p>
-      <img
-        src="assets/images/signup.png"
-        alt="signup-image"
-        style="width: 100%"
-      />
+      <img src="assets/images/signup.png" alt="signup-image" style="width: 100%" />
     </div>
   </coinbank-login-skeleton>
 </div>
