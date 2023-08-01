@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
 
   login() {
     if (this.formData.valid) {
-      this.authService.login(this.formData.value).subscribe(
+      this.authService.login(JSON.stringify(this.formData.value)).subscribe(
         (data) => {
           console.log(data);
           console.log('SUCCESS!');
