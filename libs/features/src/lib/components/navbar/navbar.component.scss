@@ -1,5 +1,7 @@
 .nav {
   text-align: center;
+  font-family: var(--coinbank-Heebo);
+  letter-spacing: 5cap;
 }
 
 header {
@@ -10,6 +12,8 @@ header {
 .logo {
   height: 30px;
   width: 40px;
+  padding-left: 10%;
+  padding-top: 1%;
 }
 
 .logos {
