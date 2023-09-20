@@ -50,12 +50,6 @@ p {
   -o-border-radius: 10px;
 }
 
-.coins {
-  background-color: #fefeff;
-  padding-top: 8%;
-  padding-left: 20%;
-}
-
 .carrds {
   display: flex;
   margin-left: 17%;
@@ -79,10 +73,10 @@ p {
 }
 
 .container1 {
-  margin-left: 10%;
+  margin-left: 15%;
   padding-top: 5%;
   display: flex;
-  gap: 4%;
+  gap: 10%;
 }
 
 h5 {
@@ -130,17 +124,100 @@ h3 {
 }
 
 .section-2 {
-  margin-left: 10%;
+  margin-left: 15%;
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 400px 400px 400px;
   font-family: var(--coinbank-Heebo);
   color: var(--coinbank-text-color);
   font-size: 18px;
   text-align: center;
-  padding-top: 5%;
+  padding-top: 2%;
 }
 
-@media screen and (max-width: 768px) {
+@media (max-width: 767px) {
+  /* Styles for mobile phones in portrait orientation */
+  h1{
+    font-size: medium;
+  }
+  .container {
+    gap: 50px;
+    padding-left: 4%;
+    display: flex;
+    flex-direction: column;
+  }
+  .image{
+    width: 450px;
+  }
+
+  .section1 {
+    margin-left: 2%;
+  }
+
+  .image {
+    width: 290px;
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .section1 {
+    text-align: center;
+    height: 10%;
+  }
+
+  .carrds {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 10%;
+    gap: 8%;
+  }
+
+  .card {
+    width: 300px;
+    height: 530px;
+  }
+
+  .coins {
+    height: auto;
+  }
+
+  .features {
+    padding-top: 20%;
+  }
+
+  .section-2 {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 12%;
+  }
+
+  .card-1 {
+    width: 280px;
+    height: 300px;
+    padding-top: 22%;
+  }
+
+  .candle {
+    width: 250px;
+    height: 200px;
+  }
+  .container1{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .chart-img {
+    width: 310px;
+  }
+  .testimonials{
+    // padding: 2% 47% 0 1%;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Styles for tablets */
   h1 {
     font-size: 40px;
     text-align: center;
@@ -196,99 +273,98 @@ h3 {
     padding-left: 1%;
   }
 }
-
-@media screen and (max-width: 425px) {
-  .container {
-    gap: 50px;
-    padding-left: 4%;
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Styles for small desktop and laptop screens */
+  h1 {
+    font-size: 35px;
   }
-
-  .section1 {
-    margin-left: 2%;
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 15%;
+    padding-top: 1%;
+    text-align: center;
   }
 
   .image {
-    width: 290px;
-    height: 300px;
-  }
-
-  h1 {
-    font-size: 30px;
+    padding-top: 6%;
   }
 
   .section1 {
     text-align: center;
-    height: 10%;
-  }
-
-  .carrds {
-    display: grid;
-    grid-template-columns: auto;
     margin-left: 10%;
-    gap: 8%;
+    padding-top: 2%;
+  }
+  .carrds{
+    padding-right: 10%;
+  }
+  .card{
+    width: 500px;
+    height: 570px;
+  }
+  h3{
+    padding: 2%;
   }
 
-  .card {
-    width: 350px;
-    height: 530px;
+  .section2 {
+    text-align: center;
+  }
+
+  .section-2 {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    text-align: center;
   }
 
   .coins {
-    background-color: #fefeff;
-    padding-top: 8%;
-    padding-left: 10%;
-  }
-
-  .features {
-    padding-top: 20%;
-  }
-
-  .section-2 {
-    display: grid;
-    grid-template-columns: auto;
-    margin-left: 20%;
-  }
-
-  .card-1 {
-    width: 280px;
-    height: 300px;
-    padding-top: 22%;
-  }
-
-  .candle {
-    width: 250px;
-    height: 200px;
-  }
-
-  .chart-img {
     width: 400px;
+    padding-left: 1%;
   }
+  .chart-img{
+    width: 500px;
+  }
+
 }
-
-@media screen and (max-width: 325px) {
-  .chart-img {
-    width: 300px;
+@media (min-width: 1280px) and (max-width: 1439px) {
+  /* Styles for medium-sized desktop screens */
+  .features{
+    padding-left: 20px;
+  }
+  .container1 {
+    display: flex;
+    flex-direction: row;
+  }
+  .chart-img{
+    padding-right: 10%;
+    width: 500px;
+  }
+  .carrds{
+    padding-right: 5%;
+  }
+  .card{
+    width: 600px;
+    height: 570px;
   }
 
-  // .section-2 {
-  //   margin-left: 4%;
-  // }
 }
-
-@media screen and (max-width: 375px) {
-  .carrds {
-    padding-left: 1px;
+@media (min-width: 1440px) {
+  /* Styles for large desktop screens */
+  .chart-img{
+    padding-right: 10%;
+    width: 500px;
   }
-
-  .chart-img {
-    width: 300px;
+  .coins{
+    padding-left: 15%;
+    padding-top: 5%;
   }
-
-  .card {
-    width: 300px;
-  }
-
-  .section-2 {
-    margin-left: 15%;
+  .container1 {
+    display: flex;
+    flex-direction: row;
   }
 }

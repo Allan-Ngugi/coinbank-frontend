@@ -38,62 +38,113 @@ p {
 h2 {
   padding-top: 5%;
 }
-
 button {
   width: 200px;
   height: 50px;
+  border: none;
+  cursor: pointer;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   background-color: var(--coinbank-color-button);
-  border: none;
-  cursor: pointer;
 }
-
 button :hover {
   background-color: red;
 }
 
-@media screen and (max-width: 320px) {
+@media (min-width: 1024px) and (max-width: 1279px) {
+  /* Styles for small desktop and laptop screens */
   .cont {
     display: grid;
-    grid-template-columns: auto;
-    padding-left: 2%;
+    grid-template-columns: 400px 400px;
+    align-items: center;
+    gap: 10%;
+    padding-top: 8%;
+    padding-left: 10%;
   }
-
-  .card3 {
-    width: 200px;
-    height: 450px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .cont {
-    display: grid;
-    grid-template-columns: auto auto;
-  }
-
   .card3 {
     width: 300px;
     height: 470px;
   }
-
   .nft-images {
     width: 300px;
     height: 280px;
   }
 }
-
-@media screen and (max-width: 425px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   .cont {
-    display: grid;
-    grid-template-columns: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12%;
+    padding: 10% 3% 5% 10%;
   }
-
   .card3 {
     width: 300px;
     height: 470px;
   }
+  .nft-images {
+    width: 300px;
+    height: 280px;
+  }
 }
+  @media (max-width: 767px) {
+    /* Styles for mobile phones in portrait orientation */
+    .cont {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10% 0 5% 0;
+      margin: auto;
+    }
+
+    .card3 {
+      width: 300px;
+      height: 470px;
+    }
+    .nft-images {
+      width: 300px;
+      height: 280px;
+    }
+  }
+  @media (min-width: 1280px) and (max-width: 1439px) {
+    /* Styles for medium-sized desktop screens */
+    .cont {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 8% 0 5% 6%;
+      margin: auto;
+    }
+
+    .card3 {
+      width: 300px;
+      height: 470px;
+    }
+    .nft-images {
+      width: 300px;
+      height: 280px;
+    }
+  }
+  @media (min-width: 1440px) {
+    /* Styles for large desktop screens */
+    .cont {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding: 8% 0 5% 4%;
+      margin: auto;
+    }
+
+    .card3 {
+      width: 350px;
+      height: 470px;
+    }
+    .nft-images {
+      width: 350px;
+      height: 280px;
+    }
+  }
+
+
